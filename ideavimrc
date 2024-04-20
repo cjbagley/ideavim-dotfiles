@@ -1,0 +1,11 @@
+let mapleader=" "
+
+set relativenumber
+set ignorecase
+set clipboard='unnamedplus'
+set ignorecase
+set smartcase
+set scrolloff=8
+set sidescrolloff=8
+set timeoutlen=300
+set ideastatusicon=disabled

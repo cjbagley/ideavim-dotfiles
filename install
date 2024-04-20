@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+IVPROJECT=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
+
+rm -rf $HOME/.ideavimrc
+ln -s $IVPROJECT/ideavimrc $HOME/.ideavimrc
+
