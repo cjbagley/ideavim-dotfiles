@@ -4,8 +4,18 @@ set relativenumber
 set ignorecase
 set clipboard='unnamedplus'
 set ignorecase
+set hlsearch
 set smartcase
 set scrolloff=8
 set sidescrolloff=8
 set timeoutlen=300
 set ideastatusicon=disabled
+
+set sneak
+set surround
+set commentary
+
+""" Only define keymaps with leader, otherwise just replace keymaps in the IDE
+""" e.g. autocomplete could not be set to <C-k> here, but can in IDE settings
+map <leader>o <Action>(FileStructurePopup)
+map <leader>h <Action>(RecentFiles)
