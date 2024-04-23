@@ -19,3 +19,9 @@ set commentary
 """ e.g. autocomplete could not be set to <C-k> here, but can in IDE settings
 map <leader>o <Action>(FileStructurePopup)
 map <leader>h <Action>(RecentFiles)
+map <leader>g <Action>(FindInPath)
+map <leader>f <Action>(GotoFile)
+map <leader>n <Action>(ActivateProjectToolWindow)
+map <leader>w <Action>(ReformatCode)
+map <leader><S-\> <Action>(SplitVertically)
+map <leader>q <Action>(CloseContent)
