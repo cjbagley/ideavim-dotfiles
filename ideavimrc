@@ -1,8 +1,9 @@
 let mapleader=" "
 
+""" Base settings
 set relativenumber
 set ignorecase
-set clipboard='unnamedplus'
+set clipboard^=unnamedplus,unnamed
 set ignorecase
 set hlsearch
 set smartcase
@@ -15,6 +16,10 @@ set sneak
 set surround
 set commentary
 
+""" Plugins
+Plug 'preservim/nerdtree'
+Plug 'justinmk/vim-sneak'
+
 """ Define keymaps here that:
 """ - have a leader, or
 """ - don't work correctly when changed in the IDE
@@ -24,7 +29,9 @@ map <leader>o <Action>(FileStructurePopup)
 map <leader>h <Action>(RecentFiles)
 map <leader>g <Action>(FindInPath)
 map <leader>f <Action>(GotoFile)
-map <leader>n <Action>(ActivateProjectToolWindow)
+map <leader>n <Action>:NERDTreeToggle<CR>
+map <leader>m <Action>(SelectInProjectView)
+map <leader>rn <Action>(RenameElement)
 map <leader>w <Action>(ReformatCode)
 map <leader><S-\> <Action>(SplitVertically)
 map <leader>q <Action>(CloseContent)
