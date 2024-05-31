@@ -32,6 +32,8 @@ map <leader>f <Action>(GotoFile)
 map <leader>n <Action>:NERDTreeToggle<CR>
 map <leader>m <Action>(SelectInProjectView)
 map <leader>rn <Action>(RenameElement)
+map <leader>rr <Action>(RunClass)
+map <leader>t <Action>(ActivateTerminalToolWindow)
 map <leader>w <Action>(ReformatCode)
 map <leader><S-\> <Action>(SplitVertically)
 map <leader>q <Action>(CloseContent)
