@@ -1,7 +1,7 @@
 let mapleader=" "
 
 """ Base settings
-set relativenumber
+""" set relativenumber
 set ignorecase
 set clipboard^=unnamedplus,unnamed
 set ignorecase
@@ -33,9 +33,11 @@ map <leader>n <Action>:NERDTreeToggle<CR>
 map <leader>m <Action>(SelectInProjectView)
 map <leader>rn <Action>(RenameElement)
 map <leader>rr <Action>(RunClass)
+map <leader>ri <Action>(Inline)
+map <leader>rv <Action>(IntroduceVariable)
 map <leader>t <Action>(ActivateTerminalToolWindow)
 map <leader>w <Action>(ReformatCode)
 map <leader><S-\> <Action>(SplitVertically)
 map <leader>q <Action>(CloseContent)
-map <C-h> <Action>(PreviousTab)
-map <C-l> <Action>(NextTab)
+map <M-h> <Action>(PreviousTab)
+map <M-l> <Action>(NextTab)
