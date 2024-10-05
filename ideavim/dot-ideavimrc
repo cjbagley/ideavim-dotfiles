@@ -1,22 +1,28 @@
 let mapleader=" "
 
 """ Base settings
-""" set relativenumber
 set ignorecase
 set clipboard^=unnamedplus,unnamed
-set ignorecase
+set autoindent
+set cindent
 set hlsearch
 set smartcase
 set scrolloff=8
 set sidescrolloff=8
 set timeoutlen=300
 set ideastatusicon=disabled
+set encoding=utf8
+scriptencoding utf8
 
+""" Don't need compatibility
+set nocompatible
+set nocp
+
+
+""" Plugins
 set sneak
 set surround
 set commentary
-
-""" Plugins
 Plug 'preservim/nerdtree'
 Plug 'justinmk/vim-sneak'
 
@@ -39,5 +45,6 @@ map <leader>t <Action>(ActivateTerminalToolWindow)
 map <leader>w <Action>(ReformatCode)
 map <leader><S-\> <Action>(SplitVertically)
 map <leader>q <Action>(CloseContent)
+map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
 map <M-h> <Action>(PreviousTab)
 map <M-l> <Action>(NextTab)
