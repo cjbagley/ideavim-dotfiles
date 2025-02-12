@@ -18,13 +18,11 @@ scriptencoding utf8
 set nocompatible
 set nocp
 
-
 """ Plugins
 set sneak
 set surround
 set commentary
-Plug 'preservim/nerdtree'
-Plug 'justinmk/vim-sneak'
+set nerdtree
 
 """ Define keymaps here that:
 """ - have a leader, or
@@ -57,3 +55,6 @@ vnoremap v "_dP
 " Reselect visual selection after indenting.
 vnoremap < <gv
 vnoremap > >gv
+
+" You can't use | whilst using ideavim, so insert it
+inoremap <leader>l \|
