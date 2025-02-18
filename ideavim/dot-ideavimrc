@@ -43,6 +43,10 @@ map <leader>t <Action>(ActivateTerminalToolWindow)
 map <leader>w <Action>(ReformatCode)
 map <leader><S-\> <Action>(SplitVertically)
 map <leader>q <Action>(CloseContent)
+map <leader>s <Action>(FileStructurePopup)
+map <leader>c <Action>(VcsShowNextChangeMarker)
+map <leader>b <Action>(Back)
+
 map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
 
 """ Non leader keymap actions
