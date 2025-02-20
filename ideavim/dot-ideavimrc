@@ -46,6 +46,15 @@ map <leader>q <Action>(CloseContent)
 map <leader>s <Action>(FileStructurePopup)
 map <leader>c <Action>(VcsShowNextChangeMarker)
 map <leader>b <Action>(Back)
+map <leader>a <Action>(Annotate)
+" Allow insert of pipe, which doesn't work in ideavim
+nnoremap <leader>l i<Bar><Esc>
+
+map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
+
+
+""" Non leader keymap actions
+map <M-h> <Action>(PreviousTab)
 
 map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
 
@@ -59,6 +68,3 @@ vnoremap v "_dP
 " Reselect visual selection after indenting.
 vnoremap < <gv
 vnoremap > >gv
-
-" You can't use | whilst using ideavim, so insert it
-inoremap <leader>l \|
