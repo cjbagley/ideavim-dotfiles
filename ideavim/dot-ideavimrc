@@ -48,6 +48,11 @@ map <leader>e <Action>(SurroundWithEmmet)
 map <leader>c <Action>(VcsShowNextChangeMarker)
 map <leader>b <Action>(Back)
 map <leader>a <Action>(Annotate)
+map <leader>k <Action>(QuickJavaDoc)
+map <leader>d <Action>(CopyContentRootPath)
+map <leader>y <Action>(Compare.SameVersion)
+
+
 " Allow insert of pipe, which doesn't work in ideavim
 nnoremap <leader>l i<Bar><Esc>
 
@@ -62,6 +67,9 @@ map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
 """ Non leader keymap actions
 map <M-h> <Action>(PreviousTab)
 map <M-l> <Action>(NextTab)
+
+" Same as browswer shortcut: Command + Shift + t
+map <D-S-t> <Action>(ReopenClosedTab)
 
 " Paste replace visual selection without copying it.
 vnoremap v "_dP
