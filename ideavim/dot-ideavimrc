@@ -51,17 +51,13 @@ map <leader>a <Action>(Annotate)
 map <leader>k <Action>(QuickJavaDoc)
 map <leader>d <Action>(CopyContentRootPath)
 map <leader>y <Action>(Compare.SameVersion)
-
+map <leader>t <Action>(Refactorings.QuickListPopupAction)
+map <leader>e <Action>(ShowErrorDescription)
 
 " Allow insert of pipe, which doesn't work in ideavim
 nnoremap <leader>l i<Bar><Esc>
 
-map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
-
-
-""" Non leader keymap actions
-map <M-h> <Action>(PreviousTab)
-
+""" laravel_idea specific
 map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
 
 """ Non leader keymap actions
