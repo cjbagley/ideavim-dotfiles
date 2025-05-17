@@ -18,6 +18,9 @@ scriptencoding utf8
 set nocompatible
 set nocp
 
+""" Include $ as part of a word, not a separate word
+set iskeyword+=$
+
 """ Plugins
 set sneak
 set surround
