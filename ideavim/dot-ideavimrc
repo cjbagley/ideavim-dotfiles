@@ -58,6 +58,7 @@ map <leader>t <Action>(Refactorings.QuickListPopupAction)
 map <leader>e <Action>(ShowErrorDescription)
 map <leader>i <Action>(InspectCode)
 map <leader>0 <Action>(ActivateAIAssistantToolWindow)
+map <leader>v <Action>(ChangeView)
 
 """ laravel_idea specific
 map <leader>l <Action>(com.laravel_idea.plugin.GenerateHelperCodeAction)
